@@ -1,0 +1,42 @@
+\setcounter{mtc}{5} %indique le num�ro r�el du chapitre, pour la mini table des mati�res
+\chapter{�tude Th�orique}
+\minitoc  %insert la minitoc
+
+\graphicspath{{Chapitre1/figures/}}
+%==============================================================================
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[R]{\bfseries\rightmark}
+\fancyfoot[R]{\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\chaptermark}[1]{\markboth{\MakeUppercase{\chaptername~\thechapter. #1 }}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thechapter.\thesection~ #1}}
+
+\begin{spacing}{1.2}
+%==============================================================================
+
+\section*{Introduction}
+Une �tude th�orique \cite{YOUSFI2015} peut contenir l'une et/ou l'autre de ces deux parties :
+\section{�tat de l'art} 
+C'est une �tude assez d�taill�e sur ce qui existe sur le march� ou dans la litt�rature (d'o� 
+le terme �tat de l'art), qui permet de r�pondre � la probl�matique. L'id�e ici est de faire 
+un comparatif entre les solutions existantes, mais surtout d'analyser le r�sultat de cette 
+comparaison et de dire pourquoi ne sont-elles pas satisfaisantes pour r�pondre � votre 
+probl�matique.
+\begin{figure}[!ht]\centering
+\includegraphics[scale=0.9]{art.jpg}
+\caption{�tat de l'art}
+\label{fig:fig1}
+\end{figure}
+\section{�tude de l'existant}
+Elle est en g�n�ral r�alis�e quand on va d�velopper un module suppl�mentaire sur un 
+logiciel existant, ou si on va modifier une application existante. L'�tude de l'existant
+consiste � expliquer ce qui existe d�j� dans votre environnement de travail.
+
+\section*{Conclusion}
+La conclusion est en g�n�ral sans num�rotation, et n'appara�t pas dans la table des mati�res.
+
+
+%==============================================================================
+\end{spacing}
